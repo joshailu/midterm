@@ -16,3 +16,11 @@ https://www.youtube.com/watch?v=NRoET8-8cbw
 
 containers
 https://www.youtube.com/watch?v=Y6q8R-9y6a0
+
+to do:
+move the resume button to the bottom of the about page.
+add comments
+organize content?
+make home page more of a hook/interesting
+write the README properly
+host site online
