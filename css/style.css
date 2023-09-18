@@ -38,3 +38,16 @@ hr {
     width: 80%;
     margin:auto;
 }
+
+.card-text {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+.card-title, .card-text {
+    color:rgb(194, 123, 160);
+}
+
+.card {
+    border-color: rgb(194, 123, 160);
+    background-color: transparent;
+}
