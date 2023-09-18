@@ -1,0 +1,8 @@
+body {
+    font-family:'Courier New', Courier, monospace;
+    background-color: rgb(234, 209, 220);
+}
+
+.navbar-text, .navbar-brand, .nav-link {
+    color: rgb(166, 77, 121);
+}
