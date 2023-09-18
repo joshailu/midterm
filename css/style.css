@@ -3,6 +3,38 @@ body {
     background-color: rgb(234, 209, 220);
 }
 
-.navbar-text, .navbar-brand, .nav-link {
+.navbar-text, .nav-link {
     color: rgb(166, 77, 121);
+}
+
+#about {
+    color: rgb(166, 77, 121);
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+#about h1 {
+    font-style: italic;
+    font-weight: bold;
+}
+
+#about .btn {
+    border-color: rgb(166, 77, 121);
+    margin: 10px;
+    font-family: 'Courier New', Courier, monospace;
+    background-color: rgb(213, 166, 189);
+}
+
+#about .btn a {
+    text-decoration: none;
+    color: rgb(166, 77, 121);
+}
+
+#about .btn a:hover {
+    text-decoration: none;
+    color: white;
+}
+
+hr {
+    width: 80%;
+    margin:auto;
 }
