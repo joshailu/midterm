@@ -8,7 +8,9 @@
 <hr>
 I created a portfolio for myself that describes my career goals, interests, skills, and background. The theme is mostly pink and is relatively simple. It has three pages that serve to briefly introduce me, provide more information about myself, and display some of my projects. While the design is simple, the home page is easy to navigate and aesthetically pleasing. <br/>
 <br/>
-Furthermore, the pages are incredibly responsive, and utilize grids and flexbox extensively to ensure that they can be viewed from any device. I built it using HTML, CSS, and Bootstrap. Since it is a relatively simple style, I opted to use Bootstrap's scripting functions instead of creating a separate JavaScript file.
+Furthermore, the pages are incredibly responsive, and utilize grids and flexbox extensively to ensure that they can be viewed from any device. I built it using HTML, CSS, and Bootstrap. Since it is a relatively simple style, I opted to use Bootstrap's scripting functions instead of creating a separate JavaScript file.<br/>
+<br/>
+Link to website: https://joshailu.github.io/midterm/projects.html
 
 ## Pages
 <hr>
