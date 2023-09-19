@@ -10,7 +10,7 @@ I created a portfolio for myself that describes my career goals, interests, skil
 <br/>
 Furthermore, the pages are incredibly responsive, and utilize grids and flexbox extensively to ensure that they can be viewed from any device. I built it using HTML, CSS, and Bootstrap. Since it is a relatively simple style, I opted to use Bootstrap's scripting functions instead of creating a separate JavaScript file.<br/>
 <br/>
-Link to website: https://joshailu.github.io/midterm/projects.html
+Link to website: https://joshailu.github.io/midterm/
 
 ## Pages
 <hr>
