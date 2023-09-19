@@ -1,22 +1,27 @@
+/*Changes the default font and background color of all the pages.*/
 body {
-    font-family:'Courier New', Courier, monospace;
+    font-family:'Courier New', Courier, monospace; 
     background-color: rgb(234, 209, 220);
 }
 
+/*Specifies the text color for the navigation bar.*/
 .navbar-text, .nav-link {
     color: rgb(166, 77, 121);
 }
 
+/*Specifies text color and font for the about page.*/
 #about {
     color: rgb(166, 77, 121);
     font-family: Georgia, 'Times New Roman', Times, serif;
 }
 
+/*Styles the about page heading*/
 #about h1 {
     font-style: italic;
     font-weight: bold;
 }
 
+/*Styles the resume button on the about page*/
 #about .btn {
     border-color: rgb(166, 77, 121);
     margin: 10px;
@@ -24,29 +29,35 @@ body {
     background-color: rgb(213, 166, 189);
 }
 
+/*Styles resume button text*/
 #about .btn a {
     text-decoration: none;
     color: rgb(166, 77, 121);
 }
 
+/*Styles resume button text on hover*/
 #about .btn a:hover {
     text-decoration: none;
     color: white;
 }
 
+/*Changes line break width*/
 hr {
     width: 80%;
     margin:auto;
 }
 
+/*Styles text in the cards on the projects page.*/
 .card-text {
     font-family: Georgia, 'Times New Roman', Times, serif;
 }
 
+/*Styles all text in cards*/
 .card-title, .card-text {
     color:rgb(194, 123, 160);
 }
 
+/*Styles card container.*/
 .card {
     border-color: rgb(194, 123, 160);
     background-color: transparent;

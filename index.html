@@ -1,39 +1,33 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
   <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="author" content="Josabeth Hailu">
+    
     <title>Home - Portfolio</title>
+
+    <!--Link to Bootstrap styling.-->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
-    <link rel="stylesheet" href="css/style.css">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="css/style.css"> <!--Overrides some Bootstrap styling with my own stylesheet.-->
   </head>
   <body>
     
-
-    <!-- navbar -->
-    <!--Everything except nav bar goes in section
-      expanded navbar: toggle button showed for smaller screens, becomes actual nav bar in medium+ screens
-      navbar-light: gives navbar a color theme and makes button visible
-      bg-warning: changes background
-      fixed-bottom: fixes the navbar at the bottom even when scrolling-->
-    <nav class="navbar navbar-expand-md navbar-dark bg-lime">
+    <!--Navigation bar: Provides links to other pages on the site. Uses the toggling feature provided by Bootstrap.
+      When the screen size is medium sized, the entire navigation bar is visible. Otherwise, it provides a drop-down button.-->
+    <nav class="navbar navbar-expand-md navbar-dark">
       <!--Makes the nav bar take 100% width until reaching XXL screens, then it is fit in a container-->
       <div class="container-xxl">
 
-        <!--toggle button for mobile navigation: it removes the links with a hamburger icon
-          data-bs-target: tells which collapsable section we wanna target
-          aria-controls/expanded: helpful for screenreaders that don't understand javascript such as toggling
-          aria-label: labels the toggle button-->
-
+        <!--Toggle button for navigation. The button collapses the navigation section with all the links. It also provides screenreaders an explanation of what the button does.-->
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#main-nav" aria-controls="main-nav" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
         </button>
 
-        <!-- navbar links girl idk
-        main-nav: the id used in the button data-bs-target-->
+        <!--Navigation bar. This is the section that will be collapsed when the toggle button is clicked.-->
         <div class="collapse navbar-collapse justify-content-center align-center" id="main-nav">
-          <!--nav, nav-item/link used for styling-->
+
+          <!--Links to other pages on the site that are contained in a list.-->
           <ul class="lead navbar-nav">
             <li class="nav-item mx-3">
               <a style="font-weight: 900;" class="nav-link" href="#">Home</a>
@@ -50,55 +44,57 @@
       </div>
     </nav>
 
-     <!-- main image & intro text -->
-    <!--Uses section tags because it works better with nav bar-->
+    <!--Main image and brief introduction.-->
     <div id="intro" >
-      <!--Page is 100% width until it reaches larger screens. Then it creates a container.-->
+      <!--Page is 100% width until it reaches larger screens. Then it creates a container that is at least 210 pixels wide.-->
       <div class="container-lg mt-5" style="min-width:210px;">
 
         <!--Grid called row that justifies all its elements in the center
           Aligns all the text in the center (on y-axis)-->
         <div class="row justify-content-center align-items-center">
 
-          <!--12 columns for small screens, 5 for medium screens, text centered (works for images as well)
-            d-none makes the display none. d-md-block makes the display:block for medium sized screens
-            thus, image only shows for medium sized screens.-->
+          <!--On smaller screens, the image will not show. For medium sized screens and up, the image will
+          show in a grid and it takes up 4 columns.-->
           <div class="col-md-4 text-center d-none d-md-block">
 
             <!--img-fluid makes the image take a 100% container width-->
-            <img class="img-fluid" src="assets/images/profile.png" alt="Ebook Cover">
+            <img class="img-fluid" src="assets/images/profile.png" alt="Profile Picture">
           </div>
 
 
           <!--Right column with text.
-          For medium sized screens, this div takes up 5 columns. 12 columns in width for smaller screens.
+          For medium sized screens, this div takes up 6 columns. 12 columns in width for smaller screens.
           Text will be aligned in center. For medium sized screens, the text will be left aligned.-->
           <div class="col-md-6 text-center text-md-start ms-3">
 
+            <!--Name.-->
             <h1>
-              <!--Display is type of font. Text-muted changes font color.-->
               <div class="display-2" style="color: rgb(166, 77, 121); font-weight: bold;">Josabeth Hailu</div>
             </h1>
 
-            <!--Lead makes it slightly larger. my-4 creates a margin on y-axis of 5-->
-            <p class="lead-my-4" style="font-family: Georgia, 'Times New Roman', Times, serif; color: rgb(194, 123, 160);">I am a junior at George Mason University pursuing a degree in Computer Science. I plan to be a Software Engineer.
+            <!--Brief introduction.-->
+            <p class="lead-my-4" style="font-family: Georgia, 'Times New Roman', Times, serif; color: rgb(194, 123, 160);">I am a junior at George Mason University pursuing a degree in Computer Science. I plan to be a Software Engineer.</p>
 
-            </p>
 
+            <!--Contacts section, integrated with home page.-->
             <h3 class="fw-bold" style="color: rgb(166, 77, 121);">Contact me!</h3>
 
+            <!--Creates another row that contains the links to each of my contacts.-->
             <div style="max-width:450px;" class="row justify-content-md-start justify-content-center m-auto m-md-0">
 
+              <!--Link to email-->
               <div style="min-width:50px;" class="col-2">
-                <a href="mailto: jhailu2@gmu.edu">
+                <a href="mailto:jhailu2@gmu.edu">
                   <img class="img-fluid" src="assets/images/email.png" alt="Email icon">
                 </a>
               </div>
+              <!--Link to Github-->
               <div style="min-width:50px;" class="col-2">
-                <a href="https://www.linkedin.com/">
+                <a href="https://github.com/">
                   <img class="img-fluid" src="assets/images/github.png" alt="Github icon">
                 </a>
               </div>
+              <!--Link to LinkedIn-->
               <div style="min-width:50px;" class="col-2">
                 <a href="https://www.linkedin.com/">
                   <img class="img-fluid" src="assets/images/linkedin.png" alt="LinkedIn icon">
@@ -107,15 +103,10 @@
             </div>            
           </div>
         </div>
-        
       </div>
     </div>
 
-    
-
-
-
-
+    <!--Link to Bootstrap scripting.-->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
   </body>
 </html>
